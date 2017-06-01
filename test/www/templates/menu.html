@@ -1,0 +1,43 @@
+<ion-side-menus enable-menu-with-back-views="true">
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-positive">
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent"></ion-nav-view> <!- THE CONTENT LOAD HERE -->
+    </ion-side-menu-content> 
+    <ion-side-menu side="left">
+        <ion-content>
+            <ion-list class="panel-menu-left">
+                <ion-item class="item" href="#/login">
+                    Login
+                </ion-item>
+                <ion-item class="item" href="#/app/homepage">
+                    Homepage
+                </ion-item>
+                <ion-item class="item" href="#/app/notification">
+                    Notification
+                </ion-item>
+                <ion-item class="item" href="#/app/friends">
+                    Friends
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+    <div class="tabs tabs-icon-only">
+        <div class="border"></div>
+        <a href="#/app/friends" class="tab-item friends">
+            <div class="flag"></div>
+            <i class="icon ion-ios-people-outline"></i>
+        </a>
+        <a href="#/app/notification" class="tab-item notifications">
+            <div class="flag"></div>
+            <i class="icon ion-ios-bell-outline"></i>
+        </a>
+        <a href="#/app/friends" class="tab-item visitors">
+            <div class="flag"></div>
+            <i class="icon ion-ios-eye-outline"></i>
+        </a>
+    </div>
+</ion-side-menus>

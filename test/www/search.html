@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+
+<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+        <title></title>
+ 
+        <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+ 
+        <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+        <link href="css/ionic.app.css" rel="stylesheet">
+        -->
+ 
+        <!-- ionic/angularjs js -->
+        <script src="lib/ionic/js/ionic.bundle.js"></script>
+ 
+        <!-- cordova script (this will be a 404 during development) -->
+        <script src="cordova.js"></script>
+ 
+        <!-- your app's js -->
+        <script src="js/app.js"></script>
+    </head>
+    <body ng-app="starter" class="back">
+        <ion-pane>
+            <ion-header-bar class="bar-dark">
+                <h1 class="title" align="left">SEARCH FOR ANYTHING!</h1>
+            </ion-header-bar>
+            <ion-content ng-controller="MailgunController">
+       
+                <div class="list">
+
+                    <br><br><label class="item icon ion-email">
+ 
+                        <input type="text"  placeholder="Enter Your Email Id....." ng-model="recipient"    required/>
+
+                      
+
+                    </label><br>
+                   
+                    <label  class="item icon ion-search"><br>
+
+
+                        <textarea placeholder="Enter Your Search Here....." ng-model="message" required/></textarea>
+                    </label>
+                    <label for="email" class="glyphicon glyphicon-search" rel="tooltip" title="email"></label>
+                </div>
+              <div class="wrapper">
+                <button class="button"  ng-click="send(recipient,message)">
+                   SEARCH
+                </button>
+            </div>
+     
+     
+            </ion-content>
+        </ion-pane>
+    </body>
+</html>

@@ -1,0 +1,107 @@
+ <ion-pane>
+           
+           
+             <ion-view view-title="Tour To Bangalore">
+          <br><br>  <ion-content ng-controller="MailgunController">
+             
+               <form  novalidate>
+                 <br> <br> <br>
+            <div class="list">
+           
+         <br> <br>  <br>  <label class="item item-input" style="text-align:center;margin:auto;">
+                    <i class="icon ion-email placeholder-icon"></i>
+                    <input type="email" name="recipient" bsy-form-validate="userNameErrorTips" placeholder="Enter Your Email Id.." ng-model="recipient" ng-pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/"     required>
+                    
+                   
+                </label><br><br>
+
+
+                
+         
+                <label class="item item-input" style="text-align:center;margin:auto;">
+    <i class="icon ion-search placeholder-icon"></i>
+    <input type="text" placeholder="Search AnyPlace In Bangalore.." bsy-form-validate="passwordErrorTips" ng-model="message"      required>
+  </label><br>
+   <div class="wrapper">
+                <button class="button"  check-form ng-click="send(recipient,message);">
+                   SEARCH
+                </button>
+            </div>
+            </div>
+             
+             
+        </form>     
+</div>
+<div class = "row icon-row">
+ 
+<div class = "container"  style="width: 45%; float:right; margin: 10px;">
+  <a ui-sref="wonder"> 
+
+              <img ng-src="http://91coupons.com/static/img/gen/wonderla-parks.jpg" alt="Avatar" class="image" width="50%"/></a>
+
+ 
+  <p><font face="oblique" weight="bold">Wonderla Park</font></p>
+        
+            </div>
+
+  
+
+ <!--  -->
+<div class = "container"  style="width: 45%; float:left; margin: 5px;">
+             <a ui-sref="iskon"> <img ng-src="http://media.makemyhangout.com/Iskcon-Temple/shareiq_293_1436170304.691444.jpg" alt="Avatar" class="image" width="100%" /></a>
+
+  <p><font face="oblique" weight="bold">Iskon Temple</font></p>
+          </div>
+          
+        </div>
+ 
+<div class = "row icon-row">
+
+<div class = "container"  style="width: 45%; float:left; margin: 10px;">
+              <a ui-sref="page4">   <img ng-src="http://images.travelpod.com/tw_slides/ta00/bb9/970/hmt-clock-bangalore.jpg" width="100%" class="image" /></a>
+               
+ <!-- <div class="overlay"> -->
+   <!-- <div class="text">Know More</div></a> -->
+  <!-- </div> -->
+<p><font face="oblique" weight="bold">Botanical Garden</font></p>
+            </div>
+ 
+
+<div class = "container"  style="width: 45%;  float:left; margin: 10px;">
+         <a ui-sref="page5">       <img ng-src="http://bangalore.mallsmarket.com/sites/default/files/photos/malls/OrionMall_Malleswaram_4.jpg" width="100%" class='image' />
+        </a>
+  
+ <p><font face="oblique" weight="bold">Orion Mall</font></p>
+
+            </div>
+ 
+          </div>
+ 
+ 
+<div class = "row icon-row">
+ 
+<div class = "container" style="width: 45%; float:right; margin: 10px;">
+ <!-- <a ui-sref="page2"> -->
+            <a ui-sref="page6">      <img ng-src="http://farm8.staticflickr.com/7074/7220867638_c33f20e21d.jpg" alt="Avatar" class="image" width="100%"/></a>
+            
+
+  <p><font face="oblique" weight="bold">Cubbon Park</font></p>
+            </div>
+ 
+<div class = "container" style="width: 45%; float:right; margin: 10px;">
+             <a ui-sref="page7">     <img ng-src="http://www.karnataka.com/wp-content/uploads/2008/10/Bannerghatta-National-Park-Tiger.jpg"  width="100%" class="image" /></a>
+
+  <p><font face="oblique" weight="bold">Bannerghatta  Park</font></p>        
+      </div>
+ 
+         
+  </div>
+
+ 
+ 
+ 
+ 
+        </section>
+
+      </ion-content>
+    </ion-pane>
